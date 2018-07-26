@@ -134,6 +134,19 @@
 #define SPI3_MISO_PIN           PC11
 #define SPI3_MOSI_PIN           PC12
 
+// NEW MAG ADDITIONS
+#define USE_I2C
+#define USE_I2C_DEVICE_2
+#define I2C_DEVICE              (I2CDEV_2)
+#define I2C2_SCL                C06 // shared with UART6TX
+#define I2C2_SDA                C07 // shared with UART6RX
+
+#define USE_MAG
+#define USE_MAG_HMC5883
+#define USE_MAG_QMC5883
+#define MAG_HMC5883_ALIGN       CW90_DEG
+// END OF NEW MAG ADDITIONS
+
 #define USE_ADC
 #define CURRENT_METER_ADC_PIN   PC1
 #define VBAT_ADC_PIN            PC2
